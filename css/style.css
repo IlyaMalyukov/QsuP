@@ -6958,7 +6958,7 @@ textarea.form-control {
   position: relative;
   text-align: center;
   padding: 15px 20px;
-  background-color: #fcb800;
+  background-color: #101010;
 }
 
 .ps-panel--sidebar .ps-panel__header h3 {
@@ -15418,7 +15418,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .mega-menu .mega-menu__column {
-  min-width: 180px;
+  width: 367px;
+  padding: 5px;
 }
 
 .mega-menu .mega-menu__list {
@@ -15459,10 +15460,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .mega-menu .mega-menu__list li a.has-badge.sale:after {
   content: 'Sale';
   background-color: #ffa800;
-}
-
-.mega-menu .mega-menu__list li a:hover {
-  color: #fcb800;
 }
 
 .menu {
@@ -15641,7 +15638,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .menu--product-categories .menu--dropdown {
   background-color: #fff;
   border: 1px solid #d3d3d3;
-  min-width: 260px;
+  width: 370px;
 }
 
 .menu--product-categories .menu--dropdown > .has-mega-menu {
@@ -15655,8 +15652,15 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .menu--dropdown > li {
-  padding: 0 20px;
+  padding: 0 12px;
   transition: all .4s ease;
+  width: 347px;
+  height: 37px;
+  margin: 12px;
+}
+
+.menu--dropdown > li:hover {
+  border-color: #ccd9dd;
 }
 
 .menu--dropdown > li > a {
@@ -15666,23 +15670,32 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .menu--dropdown > li > a i {
-  margin-right: 10px;
-  font-size: 18px;
+  margin-top: 5px;
+  font-size: 12px;
+  float: right;
+  color: #6b6b6b;
+}
+
+.fa-chevron-right {
+  margin-top: 5px;
+  font-size: 12px;
+  float: right;
+  color: #6b6b6b;
 }
 
 .menu--dropdown > li.has-mega-menu .mega-menu {
   position: absolute;
   top: 0;
   left: 100%;
-  width: auto;
-  min-width: 530px;
+  width: 370px;
+  padding: 10px;
   visibility: hidden;
   opacity: 0;
   border-left: none;
 }
 
 .menu--dropdown > li:hover {
-  background-color: #fcb800;
+  background-color: #ccd9dd;
 }
 
 .menu--dropdown > li:hover.has-mega-menu .mega-menu {
@@ -16604,6 +16617,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .navigation--list .navigation__item i {
   font-size: 24px;
+  color: #000;
 }
 
 .navigation--list .navigation__item span {
@@ -16611,11 +16625,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .navigation--list .navigation__item.active i {
-  color: #fcb800;
+  color: #f66800;
 }
 
 .navigation--list .navigation__item.active span {
-  color: #fcb800;
+  color: #f66800;
 }
 
 .navigation--list .navigation__content {
