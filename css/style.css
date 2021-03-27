@@ -15398,7 +15398,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 15px 30px 10px;
   background-color: #fff;
   transition: all 0.4s ease;
   border: 1px solid #ccc;
@@ -15406,7 +15405,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .mega-menu > * {
   width: 100%;
-  padding: 10px 15px;
+  padding: 7px 7px;
 }
 
 .mega-menu h4 {
@@ -15419,20 +15418,26 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .mega-menu .mega-menu__column {
   width: 367px;
-  padding: 5px;
 }
 
 .mega-menu .mega-menu__list {
   background-color: transparent;
 }
 
-.mega-menu .mega-menu__list li a {
-  display: block;
+.mega-menu .mega-menu__list li {
+}
+
+.mega-menu .mega-menu__list a {
   color: #000;
-  line-height: 20px;
-  padding: 5px 0;
+  width: 347px;
+  height: 37px;
   font-size: 14px;
-  background-color: transparent;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.mega-menu .mega-menu__list a:hover {
+  background-color: #ccd9dd;
 }
 
 .mega-menu .mega-menu__list li a.has-badge {
@@ -15460,6 +15465,38 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .mega-menu .mega-menu__list li a.has-badge.sale:after {
   content: 'Sale';
   background-color: #ffa800;
+}
+
+.dropright .dropdown-menu {
+  width: 370px;
+  font-size: 14px;
+  padding-top: 40px;
+  padding-left: 5px;
+  padding-right: 10px;
+  margin-left: 9px;
+  margin-top: -47px;
+  background-color: #e1e1e1;
+}
+
+.dropright .dropdown-menu li {
+  width: 342px;
+  height: 37px;
+  margin: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  background-color: #ccd9dd;
+}
+
+.dropright .dropdown-menu li a {
+  background-color: transparent;
+}
+
+.dropright .dropdown-menu li a:hover {
+  background-color: #ccd9dd;
+}
+
+.dropright .dropdown-menu li:hover {
+  font-weight: bold;
 }
 
 .menu {
@@ -15639,6 +15676,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background-color: #fff;
   border: 1px solid #d3d3d3;
   width: 370px;
+  padding-top: 35px;
 }
 
 .menu--product-categories .menu--dropdown > .has-mega-menu {
@@ -15688,7 +15726,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   top: 0;
   left: 100%;
   width: 370px;
-  padding: 10px;
+  padding: 5px;
   visibility: hidden;
   opacity: 0;
   border-left: none;
@@ -15701,6 +15739,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .menu--dropdown > li:hover.has-mega-menu .mega-menu {
   visibility: visible;
   opacity: 1;
+  margin-left: 9px;
+  margin-top: -48px;
+  padding-top: 40px;
+  background-color: #f4f4f4;
 }
 
 .menu--mobile .sub-menu {
