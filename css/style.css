@@ -971,7 +971,7 @@ a {
 }
 
 a:hover {
-  color: #fcb800;
+  color: #f66800;
 }
 
 a,
@@ -7646,16 +7646,19 @@ textarea.form-control {
 }
 
 .widget--vendor {
-  padding-bottom: 40px;
-  margin-bottom: 40px;
   border-bottom: 1px solid #d8d8d8;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #1a1a1a;
 }
 
 .widget--vendor .widget-title {
-  margin-bottom: 35px;
-  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-size: 18px;
   color: #000;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .widget--vendor .form-control {
@@ -14215,6 +14218,213 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   width: 100%;
 }
 
+.ps-section__left-outer {
+  
+  height: max-content;
+}
+
+.ps-section__left-2 {
+  margin-top: 21px;
+  max-height: 66px;
+}
+
+.ps-section__left-2 .dropdown {
+  margin-top: -10px;
+}
+
+.ps-section__left-2 button {
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  border: none;
+  min-width: 285px;
+  height: 66px;
+  margin-left: -20px;
+  margin-top: -35px;
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 1199px) {
+  .ps-section__left-2 button {
+    width: 930px;
+  }
+
+  .ps-section__left-2-content {
+    width: 943px !important;
+    font-size: larger;
+  }
+
+  .widget--vendor li {
+    font-size: larger;
+  }
+}
+
+@media (max-width: 991px) {
+  .ps-section__left-2 button {
+    max-width: 690px !important;
+  }
+
+  .ps-section__left-2-content {
+    width: 702px !important;
+    font-size: large;
+  }
+
+  .widget--vendor li {
+    font-size: large;
+  }
+}
+
+@media (max-width: 767px) {
+  .ps-section__left-2 button {
+    max-width: 510px;
+  }
+
+  .ps-section__left-2-content {
+    width: 522px !important;
+    font-size: 14px;
+    left: 0 !important;
+  }
+
+  .widget--vendor li {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 500px) {
+  .ps-section__wrapper{
+    max-width:320px;
+    margin: 0 auto;
+  }
+
+  .ps-section__left-outer {
+    max-width: 320px;
+  }
+
+  .ps-section__left {
+    max-width: 320px;
+  }
+
+  .ps-section__left-2 button {
+    max-width: 310px !important;
+  }
+
+  .ps-section__left-2-content {
+    width: 322px !important;
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .ps-section__wrapper{
+    max-width:260px;
+    margin: 0 auto;
+  }
+
+  .ps-section__left-outer {
+    max-width: 260px;
+  }
+
+  .ps-section__left {
+    max-width: 260px;
+  }
+
+  .ps-section__left-2 button {
+    width: 240px !important;
+  }
+
+  #dropdownMenuButton {
+    width: 240px !important;
+  }
+
+  .ps-section__left-2 button .dropdown-content {
+    width: 242px;
+    margin-right: 0;
+  }
+
+  .ps-section__left-2-content {
+    max-width: 262px !important;
+    left: 0 !important;
+  }
+}
+
+.ps-section__left-2 button .dropdown-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 12px;
+}
+
+.dropdown-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+}
+
+.ps-section__left-2-content {
+  border: none;
+  width: 300px;
+  padding-left: 10px;
+  background-color: #f5f5f5;
+  left: -12px !important;
+}
+
+.ps-section__left-2-content li {
+  padding-left: 15px;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #c4c4c4;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70% 70%;
+}
+
+.custom-checkbox:checked+label::before {
+  background-image: url(/img_qsup/Check.png);
+}
+
+/* при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #f66800;
+}
+/* для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #f66800;
+  border-color: #c4c4c4;
+}
+/* для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(246, 104, 0, 1);
+}
+/* для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #f66800;
+}
+/* для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+
 .ps-vendor-store .ps-section__container .ps-section__left {
   max-width: 25%;
 }
@@ -14532,13 +14742,17 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   padding-bottom: 60px;
 }
 
+/*
 .ps-store-list .ps-section__wrapper > * {
   flex-basis: 100%;
 }
+*/
 
 .ps-store-list .ps-section__left {
   padding: 25px 20px;
-  background-color: #efefef;
+  background-color: #f5f5f5;
+  height:max-content;
+  margin-right: -10px;
 }
 
 .ps-store-list .ps-section__right {
@@ -14692,7 +14906,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .ps-store-box .ps-product__inner-2 {
   height: 84px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .ps-store-box .ps-product__inner-btn {
@@ -14728,7 +14942,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 @media (max-width: 460px) {
   .ps-store-box .ps-product__inner-btn {
-    width: 165px;
+    width: 155px;
   }
 }
 
@@ -16756,6 +16970,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .navigation--sidebar .navigation__content {
   padding-top: 10px;
   padding-bottom: 70px;
+}
+
+.navigation--sidebar .navigation__content svg:hover {
+  stroke: #f66800;
+}
+
+.navigation--sidebar .navigation__content svg:active {
+  stroke: #f66800;
 }
 
 .navigation--sidebar .header__actions a {
