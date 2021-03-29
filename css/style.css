@@ -4875,6 +4875,11 @@ textarea.form-control {
   }
 }
 
+.widget_footer .develop-info img {
+  width: 74px;
+  height: 17px;
+}
+
 .ps-block--container-hightlight .ps-section__content {
   padding: 30px 20px;
   border: 2px solid #F66800;
@@ -7561,6 +7566,78 @@ textarea.form-control {
   height: max-content !important;
 }
 
+.ps-tab-root .ps-tab-list {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+@media (max-width: 991px) {
+  .ps-tab-root .ps-tab-list {
+    padding-left: 0;
+  }
+}
+
+.ps-tab-root .ps-tabs {
+  max-width: 1161px;
+  width: 100%;
+  height: max-content;
+  font-size: 14px;
+}
+
+.ps-tab-root .ps-tabs {
+  margin-top: 30px;
+}
+
+.ps-tab-root .ps-tabs tr :first-child {
+  width: 231px !important;
+  height: 43px;
+  font-size: 14px;
+}
+
+@media (max-width: 1199px) {
+  .ps-tab-root .ps-tabs tr :first-child {
+    width: 180px !important;
+    font-size: 12px;
+  }
+}
+
+.ps-tab-root .ps-tabs tr td {
+  height: 43px !important;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.ps-tab-root .ps-tabs {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 991px) {
+  #tab-2 {
+    flex-direction: column;
+  }
+
+  #tab-2 .tab-2__desc {
+    margin-left: 0 !important;
+    margin-top: 15px !important;
+  }
+}
+
+#tab-2 .tab-2__desc {
+  max-width: 498px;
+  margin-left: 39px;
+  margin-top: -5px;
+}
+
+#tab-2 .tab-2__desc-doc {
+  margin-top: -5px;
+}
+
+#tab-2 .tab-2__desc-doc ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
 .widget_best-sale {
   padding: 15px 10px;
   border: 1px solid #d9d9d9;
@@ -9885,6 +9962,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   padding-top: 0;
 }
 
+.ps-t
+
 .ps-product--detail .ps-tab-list {
   position: relative;
   display: block;
@@ -9944,7 +10023,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ps-product--detail .ps-tab p {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  font-size: 14px;
 }
 
 .ps-product--detail .ps-product .ps-product__price {
@@ -11953,7 +12033,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ps-tab.active {
-  display: block;
+  display: flex;
 }
 
 /*3. COMPONENTS */
@@ -17487,6 +17567,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   border-bottom: 1px solid #e1e1e1;
 }
 
+@media (max-width: 1199px) {
+  .ps-footer--3 {
+    padding-bottom: 50px;
+  }
+}
+
 @media (max-width: 767px) {
   .ps-footer--3 .ps-block--site-features {
     margin-bottom: 40px;
@@ -18270,5 +18356,6 @@ html .bg--parallax {
   padding: 0;
   list-style: none;
 }
+
 
 /*# sourceMappingURL=style.css.map */
