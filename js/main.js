@@ -413,7 +413,7 @@
                 vertical: vertical,
                 responsive: [
                     {
-                        breakpoint: 1200,
+                        breakpoint: 1920,
                         settings: {
                             arrows: second.data('arrow'),
                             slidesToShow: 4,
