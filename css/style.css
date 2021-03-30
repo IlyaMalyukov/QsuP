@@ -15595,6 +15595,31 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
 }
 
+.payment-info__item {
+  margin-bottom: 40px;
+}
+
+.payment-info__item h4 {
+  text-transform: uppercase;
+  font-weight:bolder;
+  margin-bottom: 30px;
+}
+
+
+
+.payment-info__item ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.payment-info__item ul li span {
+  color: #666;
+}
+
+.payment-info__item img {
+  margin: 30px 0 30px 0;
+}
+
 #shop-sidebar .ps-page__header {
   margin-bottom: 50px;
 }
