@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>Payment Info</title>
+    <title>Cart Page</title>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&amp;amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="fonts/Linearicons/Linearicons/Font/demo-files/demo.css">
@@ -417,153 +417,184 @@
         <div class="container">
             <ul class="breadcrumb">
                 <li><a href="index.html">Главная</a></li>
-                <li>Ремонт и сервис</li>
+                <li>Корзина</li>
             </ul>
         </div>
     </div>
 
-    <div class="ps-page--product">
         <div class="ps-container">
             <div class="ps-page__container">
-                <div class="ps-page__content">
-                  
+                <div class="ps-page__content cart-page">
+
                   <div class="ps-section__header">
-                    <h3>Оплата и доставка</h3>
+                    <h3>Корзина</h3>
                   </div>
 
-                  <div class="ps-section__desc-contacts">
-
-                    <div class="ps-section__desc-contacts--item">
-                      <p class="item-title">По всем вопросам обращаться по телефону: 
-                        <a href="tel:+7904004447">8-904-004-44-47</a></p>
-                          <button type="submit" class="payment-info__btn">
-                            Все товары на сайте в наличии
-                          </button>  
-                    </div>
-
-                    <div class="ps-section__desc-contacts--item">
-                      <p>Мы находимся по адресу:</p>
-                      <hr>
-                      <p>
-                        г.Тверь, ул.Трехсвятская, д.6, к.1. <br>
-                         ТЦ "ПАРАДИЗ" / Цокольный этаж <br>
-                        Сервисный центр "РАДИОМАН"
-                      </p>
-                    </div>
-
+                  <div class="ps-section__desc-contacts--item">
+                    <p class="item-title">По всем вопросам обращаться по телефону: 
+                      <a href="tel:+7904004447">8-904-004-44-47</a></p>
                   </div>
 
-                  <div class="ps-section__content payment-info">
+                  <div class="table-responsive">
+                    <table class="table ps-table--shopping-cart ps-table--responsive">
+                        <thead>
+                            <tr>
+                                <th>Наименование</th>
+                                <th>Цена</th>
+                                <th>Количество</th>
+                                <th>Стоимость</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Наименование">
+                                  <div class="ps-product--cart">
+                                      <div class="ps-product__content">
+                                        <div class="ps-product__name">
+                                          <a href="#">BD9897FS, ШИМ-контроллер, контроллер инвертора DC/ AC, [SSOP-32]</a>
+                                          <p> Rohm, AC-DC Преобразователи, Off-Line коммутаторы ном. номер: 9000074796</p>
+                                        </div>
+                                        <div class="ps-product__thumbnail"><a href="#"><img src="img_qsup/cart-page/1.png" alt=""></a></div>
+                                      </div>
+                                  </div>
 
-                    <div class="payment-info__item">
-                      <h4>Как купить</h4>
+                                </td>
+                                <td class="price" data-label="Цена">130 ₽</td>
+                                <td data-label="Количество">
+                                    <div class="form-group--number">
+                                        <button class="up">+</button>
+                                        <button class="down">-</button>
+                                        <input class="form-control" type="text" placeholder="1" value="1">
+                                    </div>
+                                </td>
+                                <td class="price" data-label="Стоимость">130 ₽</td>
+                                <td data-label="Удалить"><i class="icon-cross"></i></td>
+                            </tr>
+                            <tr>
+                              <td data-label="Наименование">
+                                  <div class="ps-product--cart">
+                                      <div class="ps-product__content">
+                                        <div class="ps-product__name">
+                                          <a href="#"> MK162, Передатчик сигнала 2-канальный</a>
+                                          <p>Velleman, Системы дистанционного управления ном. номер: 9000026680</p>
+                                        </div>
+                                        <div class="ps-product__thumbnail"><a href="#"><img src="img_qsup/cart-page/2.png" alt=""></a></div>
+                                      </div>
+                                  </div>
+                              </td>
+                              <td class="price" data-label="Цена">2530 ₽</td>
+                              <td data-label="Количество">
+                                  <div class="form-group--number">
+                                      <button class="up">+</button>
+                                      <button class="down">-</button>
+                                      <input class="form-control" type="text" placeholder="1" value="3">
+                                  </div>
+                              </td>
+                              <td class="price" data-label="Стоимость">7590 ₽</td>
+                              <td data-label="Удалить"><i class="icon-cross"></i></td>
+                          </tr>
+                        </tbody>
+                    </table>
 
-                    <p>
-                      Чтобы купить радиодетали в нашем магазине, 
-                      нужно набрать корзину и оформить заказ. 
-                      После чего товар резервируется за вами на 5 дней. 
-                      Небольшие заказы могут собираться продавцами 
-                      в магазине без предварительного оформления.
-                    </p>
-
-                    <p>
-                      <b>
-                        Вы можете оплатить свой заказ в нашем 
-                        магазине при получении
-                      </b>
-                    </p>
-
-                    <p>
-                      <b>
-                        Оформить доставку почтой первого класса
-                      </b>
-                    </p>
-                      
-                      <ul>
-                        <li>
-                          <span>
-                            Отправка заказа осуществляется в течении 1-2 дня 
-                            с момента поступления 100% оплаты. Наложенным платежом 
-                            товар не отправляется. На ваш почтовый ящик придёт 
-                            информационное письмо с номером  карты сбербанка на 
-                            которую можно оплатить заказ. Также заказ можно оплатить 
-                            через Сбербанк по квитанции которая приложена к 
-                            информационному письму.  
-                          </span>
-                        </li>
-
-                        <li>
-                          <span>
-                            После отправки вашего заказа на ваш почтовый ящик придёт 
-                            письмо с номером трекинга для отслеживания вашего заказа. 
-                            ( !!!  На забывайте указывать своё ФИО, индекс и адрес полностью 
-                            - эта информация необходима  для отправки вашего заказа !!! ) 
-                          </span>
-                        </li>
-                      </ul>
+                    <div class="cart-page__total">
+                      <p>Всего 2 товара на сумму: <b> 7720 руб</b> </p>
                     </div>
+                </div>
 
-                    <div class="payment-info__item">
-                      <h4>Способы доставки</h4>
+                <div class="checkbox-group">
+                  <div class="checkbox-group__item">
+                    <p><b>Выберите способ доставки</b></p>
+                    <input
+                     class="custom-radio" id="1" type="checkbox">
+                    <label for="1">СДЭК (Оплата покупателем) 300.00 руб.</label>
 
-                      <b>Почта России (russianpost.ru)</b> <br>
+                    <input class="custom-radio" id="2" type="checkbox">
+                    <label for="2">Самовывоз</label>
 
-                      <img src="img_qsup/payment-info/russian-post.png">
+                    <input class="custom-radio" id="3" type="checkbox">
+                    <label for="3">Почта России I класс до 0,5 кг 300.00 руб.</label>
+                  </div>
 
-                      <p>Стоимость доставки фиксрована и составляет:</p>
+                  <div class="checkbox-group__item">
+                    <p><b>Выберите способ оплаты</b></p>
+                    <input
+                     class="custom-radio" id="4" type="checkbox">
+                    <label for="4">Онлайн оплата</label>
 
-                      <ul>
-                        <li> <span>Посылка 1 класс: 300 рублей.</span> </li>
-                        <li> <span>Сроки доставки: обычно 3-6 дней. </span> </li>
-                        <li> <span>Отслеживание посылки: при помощи сервиса 
-                          по почтовому идентификатору.</span> </li>
-                      </ul>
+                    <input class="custom-radio" id="5" type="checkbox">
+                    <label for="5">Оплата при получении</label>
 
-                      <b>Самовывоз в Твери: </b> <br>
-                      <p>Вы можете оплатить свой заказ в нашем магазине при получении. </p>
+                    <input class="custom-radio" id="6" type="checkbox">
+                    <label for="6">Оплата по банковским реквизитам</label>
+                  </div>
+                </div>
 
+                <div class="cart-page__total">
+                  <p>Итого к оплате: <b> 7720 руб</b> </p>
+                </div>
+
+                <div class="cart-page__form">
+
+                  <p><b>Выберите способ доставки</b></p>
+
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                      <form action="">
+
+                        <div class="form-row">
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <input type="text" class="form-control" placeholder="Город">
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Улица">
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Дом">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Корпус">
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col">
+                            <select id="inputState" class="form-control">
+                              <option selected="">Завтра 10 февраля</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col">
+                            <select id="inputState" class="form-control">
+                              <option selected="">10.00 - 22.00</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class="col-xl-6 col-lg-6 col-md-6 col-xl-12">
+                            <a class="ps-btn" href="#">Оформить заказ</a>
+                          </div>
+                        </div>
+
+
+                      </form>
                     </div>
-
-                    <div class="payment-info__item">
-                      <h4>Способы оплаты</h4>
-
-                      <b>Для физических лиц:</b>
-
-                      <ul>
-                        <li>
-                          <span>
-                            Оплата наличными при получении в магазине.
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            Перевод на карту Сбербанка ( номер карты в 
-                            информационном письме ) 
-                          </span>
-                        </li>
-                        <li>
-                          <span>
-                            Оплата через Сбербанк по квитанции прикреплённой 
-                            к информационному письму.
-                          </span>
-                        </li>
-                      </ul>
-
-                      <p style="margin: 30px 0 30px 0;">Срок оплаты выставленного счета - 5 рабочих дней.</p>
-
-                      <p>
-                        Мы гарантируем выполнение заказа при условии 
-                        оплаты счета в течение 1-2 рабочих дней. <br>
-                        По Вашей просьбе мы можем изменить состав неоплаченного 
-                        счёта или добавить к нему новую заявку, продлить резерв 
-                        по телефону <a href="tel:+79040044447">8 904 004 4447</a>
-                      </p>
-                    </div>
-
                   </div>
 
                 </div>
+
+                </div>
             </div>
+
+
 
             <div class="ps-page__content content-second">
 
@@ -747,7 +778,6 @@
 
 
         </div>
-    </div>
 
 
     </div>
