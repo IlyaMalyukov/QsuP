@@ -1269,6 +1269,10 @@ body {
   }
 }
 
+.catalog-subsection {
+  margin-top: 15px;
+}
+
 .ps-list--social {
   margin: 0;
   padding: 0;
@@ -3380,6 +3384,7 @@ textarea.form-control {
 .ps-breadcrumb .breadcrumb {
   display: inline-block;
   margin: 0;
+  margin-left: 40px;
   padding: 0;
   background-color: transparent;
 }
@@ -16107,6 +16112,89 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .catalog-section .col-item a {
   font-size: 14px;
   color: #f66800;
+}
+
+.contacts-page {
+  text-align: center;
+  padding-bottom: 40px !important;
+}
+
+.contacts-page h3 {
+  margin-bottom: 75px;
+}
+
+.contacts-page b {
+  color: #000;
+}
+
+.contacts-page a {
+  color: #f66800;
+}
+
+.message-form {
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+
+.message-form h3 {
+  font-weight: 400;
+}
+
+.message-form form {
+  max-width: 531px;
+  margin: 0 auto;
+  margin-top: 58px;
+}
+
+.message-form form .row {
+  margin-bottom: 20px;
+}
+
+.message-form .col {
+  border-radius: 0;
+}
+
+.message-form form .col input {
+  background-color: #fff;
+  color: #d1d0d1;
+}
+
+.message-form form .col textarea {
+  background-color: #fff;
+  color: #d1d0d1;
+}
+
+.message-form .col button {
+  border: none;
+  max-width: 531px;
+  width: 100%;
+  height: 53px;
+  background-color: #f66800;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+@media (max-width: 530px) {
+  .contacts-page .row {
+    flex-direction: column;
+  }
+
+  .contacts-page h3 {
+    margin-bottom: 30px;
+  }
+
+  .contacts-page p {
+    margin-top: 15px;
+  }
+}
+
+.contacts-page .map iframe {
+  height: 292px;
+  margin-top: 115px;
 }
 
 .content-second {
