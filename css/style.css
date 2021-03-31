@@ -14619,29 +14619,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background-image: url(/img_qsup/Check.png);
 }
 
-/* при наведении курсора на checkbox */
-.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
-  border-color: #f66800;
-}
-/* для активного состояния чекбокса (при нажатии на него) */
-.custom-checkbox:not(:disabled):active+label::before {
-  background-color: #f66800;
-  border-color: #c4c4c4;
-}
-/* для чекбокса, находящегося в фокусе */
-.custom-checkbox:focus+label::before {
-  box-shadow: 0 0 0 0.2rem rgba(246, 104, 0, 1);
-}
-/* для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
-.custom-checkbox:focus:not(:checked)+label::before {
-  border-color: #f66800;
-}
-/* для чекбокса, находящегося в состоянии disabled */
-.custom-checkbox:disabled+label::before {
-  background-color: #e9ecef;
-}
-
-
 .custom-radio {
   position: absolute;
   z-index: -1;
@@ -15970,6 +15947,144 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .ps-page__content-desc {
   margin-top: 40px;
+}
+
+.login-page {
+  text-align: center;
+  padding-bottom: 130px;
+}
+
+.login-page .login-form {
+  max-width: 524px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.login-page .login-form .form-row {
+  justify-content: space-between;
+}
+
+.login-page .login-form .col {
+  padding: 0;
+  margin-bottom: 19px;
+}
+
+.login-page .login-form .double-col {
+  max-width: 242px;
+}
+
+.login-page .login-form .col-link {
+  color: #1E90FF;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.login-page .login-form .top-btn {
+  width: 262px;
+  height: 39px;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 28px;
+}
+
+.login-page .login-form .active {
+  background-color: #ccd9dd;
+}
+
+.login-page .login-form button {
+  min-width: 216px;
+  color: #f66800;
+  border: none;
+  border-bottom: 1px dashed #f66800;
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+.login-page .login-form .checkbox-group {
+  display: flex;
+  justify-content: space-between;
+  color: #68757b;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 565px) {
+  .login-page .login-form .checkbox-group {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+.login-page .login-form .password-action {
+  max-width: 458px;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #000;
+}
+
+.login-page .login-form .password-action a {
+  color: #f66800;
+}
+
+.login-page .login-form .checkbox-group .item-second {
+  max-width: 517px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0;
+}
+
+.login-page .login-form .checkbox-group .item-second
+.custom-checkbox+label {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.login-page .login-form .checkbox-group .item-second
+.custom-checkbox+label::before {
+  margin-top: 4px;
+}
+
+.checkbox-group-second {
+  margin-bottom: 0 !important;
+}
+
+.login-page .login-form .ps-btn {
+  color: #fff;
+  width: 100%;
+}
+
+.social-title {
+  color: #000;
+}
+
+.social {
+  display: flex;
+}
+
+.social p {
+  color: #000;
+}
+
+.social .ps-btn {
+  display: flex;
+  height: 77px;
+  width: 115px !important;
+  background-color: #f66800;
+  border-radius: 0;
+  font-size: 27px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.social .ps-btn:hover {
+  font-size: 35px;
+}
+
+.social-title {
+  margin-bottom: 0 !important;
+  text-align: left;
+  padding-left: 10px !important;
 }
 
 .content-second {
@@ -17685,9 +17800,17 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: block;
 }
 
+/*
+
 .navigation--list .navigation__item.active i {
   color: #f66800;
 }
+
+.navigation--list .navigation__item.active svg {
+  stroke: orange;
+}
+
+*/
 
 .navigation--list .navigation__item.active span {
   color: #f66800;
