@@ -15933,9 +15933,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .ps-page__content {
   max-width: 1200px !important;
-  padding-top: 35px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 50px 30px 130px 30px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -15951,7 +15949,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .login-page {
   text-align: center;
-  padding-bottom: 130px;
+  padding: 50px 30px 130px 30px;
 }
 
 .login-page .login-form {
@@ -16087,6 +16085,29 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   padding-left: 10px !important;
 }
 
+.catalog-section {
+  padding: 50px 30px 130px 30px;
+}
+
+.catalog-section .image {
+  max-width: 1135px;
+  height: 133px;
+  background-image: url(/img_qsup/catalog-section/main.jpeg);
+  background-size: cover;
+  background-position-y: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.catalog-section .col-item {
+  margin-top: 40px;
+}
+
+.catalog-section .col-item a {
+  font-size: 13px;
+  color: #f66800;
+}
+
 .content-second {
   margin-top: 40px;
   margin-bottom: 127px;
@@ -16130,7 +16151,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .cart-page .ps-section__desc-contacts--item a {
-  color: #f66800;
+  color: #1E90FF;
   border: none;
 }
 
@@ -16363,6 +16384,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #1a1a1a;
   font-size: 14px;
   font-weight: 400;
+}
+
+.ps-section__desc-contacts--item :first-child a {
+  color: dodgerblue;
 }
 
 .ps-page--product-box {
