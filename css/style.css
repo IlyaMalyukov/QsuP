@@ -4828,7 +4828,7 @@ textarea.form-control {
 
 .ps-section__header-buttons button {
   border: none;
-  border-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .ps-block--container-hightlight .ps-section__header h3 {
@@ -14966,6 +14966,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: flex;
   flex-flow: column-reverse wrap;
   padding-bottom: 60px;
+  justify-content: center;
 }
 
 /*
@@ -16104,7 +16105,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .catalog-section .col-item a {
-  font-size: 13px;
+  font-size: 14px;
   color: #f66800;
 }
 
