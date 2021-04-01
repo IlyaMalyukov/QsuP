@@ -16785,6 +16785,45 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   text-align: right;
 }
 
+.error-page {
+  background-color: #e1e0e1;
+}
+
+.error-page__container {
+  max-width: 830px;
+  margin: 0 auto;
+  padding: 50px 50px 70px 50px;
+  text-align: center;
+}
+
+.error-page__container h3 {
+  font-size: 36px;
+}
+
+.error-page__container p {
+  font-size: 18px;
+  color: #000;
+  margin-top: 25px;
+  line-height: 21px;
+}
+
+.error-page__container a {
+  font-size: 18px;
+  color: #f66800;
+  line-height: 21px;
+}
+
+@media (max-width: 991px) {
+  .error-page__container h3 {
+    font-size: 26px;
+  }
+
+  .error-page__container p,
+  .error-page__container a {
+    font-size: 15px;
+  }
+}
+
 
 @media (max-width: 1040px) {
   .ps-section__desc-contacts {
