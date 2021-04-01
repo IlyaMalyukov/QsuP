@@ -4825,10 +4825,10 @@ textarea.form-control {
 .ps-section__header-buttons select {
   border: 1px solid #d1d0d1;
   background-color: #fff;
-  width: 236px;
+  width: 211px;
   height: 39px;
   padding: 10px 15px;
-  margin-right: 90px;
+  margin-right: 82px;
 }
 
 .ps-section__header-buttons button {
@@ -8480,8 +8480,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: relative;
   padding: 10px 10px 0;
   border: 1px solid #e1e1e1;
-  max-width: 230px;
-  max-height: 387px;
+  width: 251px;
+  height: 387px;
 }
 
 .ps-product .ps-product__rating .br-wrapper {
@@ -8653,17 +8653,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ps-product__content {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 173px;
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
-  max-width: 185px;
-  height: 155px;
+  flex-direction: column;
 }
 
 .ps-product__description {
   display: flex;
   justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 5px;
 }
 
 .ps-product__description button {
@@ -8970,10 +8971,29 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .ps-product--cart .ps-product__thumbnail {
   max-width: 100px;
+  max-height: 63px;
+}
+
+.ps-product--cart .ps-product__thumbnail a img {
+  max-height: 63px;
+}
+
+#listCards .ps-product--cart .ps-product__content {
+  margin-right: 150px;
+}
+
+@media (max-width: 1199px) {
+  #listCards .ps-product--cart .ps-product__content {
+    margin-right: 0;
+  }
 }
 
 .ps-product--cart .ps-product__content {
-  padding-left: 30px;
+  max-width: 615px;
+  max-height: 55px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .ps-product--cart .ps-product__content a {
@@ -11576,7 +11596,17 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #6b6b6b;
 }
 
-.ps-table--shopping-cart tbody tr .price {
+#listCards .ps-table--shopping-cart tbody tr .price p {
+  margin-right: -15px;
+}
+
+@media (max-width: 991px) {
+  #listCards .ps-table--shopping-cart tbody tr .price p {
+    margin-right: 0;
+  }
+}
+
+.ps-table--shopping-cart tbody tr .price p {
   font-size: 16px;
   color: #000;
   line-height: 21px;
@@ -11597,6 +11627,16 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .ps-table--shopping-cart tbody tr td:last-child {
   text-align: right;
+}
+
+#listCards .ps-table--shopping-cart tbody tr td button {
+  margin-left: -70px;
+}
+
+@media (max-width: 991px) {
+  #listCards .ps-table--shopping-cart tbody tr td button {
+    margin-left: 0;
+  }
 }
 
 .ps-table--shopping-cart tbody tr td button {
@@ -15939,7 +15979,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .ps-page__content {
   max-width: 1200px !important;
-  padding: 50px 30px 130px 30px;
+  padding: 50px 29px 130px 29px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -16501,6 +16541,63 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .account-page .account-page__btn-container {
   justify-content: center;
+}
+
+.search-page .ps-section__header-gray {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 20px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 35px;
+}
+
+.search-page .ps-section__header-gray p {
+  margin-bottom: 0;
+}
+
+.search-page .ps-section__header-buttons select {
+  width: 211px;
+  margin-right: 82px;
+}
+
+.search-page .grid-cards {
+  margin-top: 39px;
+}
+
+.search-page #listCards .ps-product__content {
+  margin-right: 150px;
+}
+
+@media (max-width: 1199px) {
+  .search-page #listCards .ps-product__content {
+    margin-right: 0;
+  }
+
+  .search-page #listCards  .ps-table--shopping-cart tbody tr td button {
+    margin-left: -0 !important;
+  }
+}
+
+.search-page #listCards  .ps-table--shopping-cart tbody tr td button {
+  margin-left: -70px;
+}
+
+.search-page #listCards  .ps-table--shopping-cart tbody tr .price p {
+  margin-right: -15px;
+}
+
+@media (max-width: 767px) {
+  .search-page #listCards .ps-table--shopping-cart tbody tr .price p {
+    margin-right: 0;
+  }
+
+  .search-page #listCards .ps-product--cart .ps-product__content {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 1040px) {

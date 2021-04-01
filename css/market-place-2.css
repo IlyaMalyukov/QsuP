@@ -300,11 +300,15 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 20px;
+  padding: 7px 20px;
   background-color: #f5f5f5;
   font-size: 14px;
   font-weight: 400;
 } 
+
+#homepage-4 .ps-product-list .ps-section__header-gray p {
+  margin-bottom: 0;
+}
 
 @media (max-width: 767px) {
   #homepage-4 .ps-product-list {
