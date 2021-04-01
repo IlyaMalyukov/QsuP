@@ -16600,6 +16600,192 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
 }
 
+.repair-page .repair-img img {
+  max-width: 517px;
+  width: 100%;
+  height: 370px;
+  height: 100%;
+}
+
+.repair-page p {
+  line-height: 28px;
+}
+
+.repair-page ul {
+  padding-left: 15px;
+  color: #f66800;
+  margin: 30px 0 30px 0;
+}
+
+.repair-page ul span {
+  color: #666;
+}
+
+.repair-page .repair-live-cast img{
+  max-width: 517px;
+  max-height: 285px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 1199px) {
+  .repair-page .row {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .repair-page .col {
+    margin-top: 30px;
+  }
+
+  .repair-page .repair-img {
+    margin-top: 0;
+  }
+}
+
+.repair-page .table-responsive {
+  max-width: 1057px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 95px;
+  border-bottom: none;
+}
+
+.repair-page .table-responsive--mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .repair-page .table-responsive {
+    display: none;
+  }
+
+  .repair-page .table-responsive--mobile {
+    display: block;
+  }
+}
+
+.repair-page table {
+  border: 1px solid #e1e0e1;
+  margin-bottom: 0;
+  max-width: 1057px;
+  width: 100%;
+}
+
+.repair-page table thead {
+  background-color: #e1e0e1;
+  color: #000;
+}
+
+.repair-page table th {
+  height: 44px;
+  border: 2px solid #e1e0e1;
+}
+
+.repair-page table .table-name {
+  width: 554px;
+  padding-top: 20px;
+  padding-left: 29px;
+  vertical-align: top;
+}
+
+
+.repair-page .table-service {
+  padding-top: 20px;
+  vertical-align: top;
+}
+
+
+.repair-page table .table-price {
+  width: 139px;
+  padding-top: 20px;
+  vertical-align: top;
+}
+
+.repair-page .table-th {
+  vertical-align: center;
+  padding-left: 5px;
+}
+
+.repair-page table tr td {
+  border: none !important;
+  height: 61px !important;
+}
+
+.repair-page table p {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1040px) {
+  .repair-page table .table-name {
+    width: 254px;
+    padding-left: 5px;
+  }
+}
+
+@media (max-width: 479px) {
+  .repair-page table .table-name {
+    width: 90px;
+  }
+
+  .repair-page table .table-service {
+    width: 95px;
+  }
+
+  .repair-page table .table-price {
+    width: 70px;
+  }
+
+
+  .repair-page table p {
+    font-size: 12px;
+  }
+}
+
+.repair-page table b {
+  color: #000;
+} 
+
+.repair-page .table-responsive {
+  margin-top: 95px;
+}
+
+.repair-page .table-responsive__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.repair-page .table-responsive--mobile {
+  text-align: center;
+}
+
+.repair-page .table-responsive--mobile table {
+  margin-top: 30px;
+}
+
+.repair-page .table-responsive--mobile td {
+  padding: 10px;
+  vertical-align: top;
+  width: 50%;
+}
+
+.repair-page .table-responsive--mobile .th-mobile {
+  background-color: #e1e0e1;
+  border: none;
+  vertical-align: middle;
+}
+
+.repair-page .table-responsive--mobile .th-mobile p {
+  color: #000;
+}
+
+.repair-page .table-responsive--mobile .mobile-price p {
+  color: #000;
+  text-align: right;
+}
+
+
 @media (max-width: 1040px) {
   .ps-section__desc-contacts {
     flex-direction: column;
