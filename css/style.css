@@ -3384,7 +3384,7 @@ textarea.form-control {
 .ps-breadcrumb .breadcrumb {
   display: inline-block;
   margin: 0;
-  margin-left: 40px;
+  margin-left: 6%;
   padding: 0;
   background-color: transparent;
 }
@@ -13187,7 +13187,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .service-page  {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(281px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin-top: 45px;
   margin-bottom: 115px;
@@ -13197,11 +13197,52 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: relative;
   padding: 10px 10px 0;
   border: 1px solid #e1e1e1;
-  width: 281px;
+  max-width: 281px;
+  width: 100%;
+  max-height: 279px;
+  height: 100%;
   font-size: 14px;
   margin-bottom: 15px;
   margin: 0 auto;
 }
+
+@media (max-width: 1300px) {
+  .service-page .ps-product-service {
+    max-width: 231px;
+    max-height: 229px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .service-page {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .service-page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-page {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .ps-page__content {
+    padding-bottom: 40px !important;
+  }
+
+  hr {
+    max-width: 180px;
+    width: 100%;
+  }
+}
+
 
 .service-page .ps-product-service a {
   color: #000;
@@ -13220,6 +13261,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .service-page .ps-product__container {
   height: 62px;
+}
+
+@media (max-width: 480px) {
+  .ps-page__content {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .wish-list {
+    max-width: 310px !important;
+    margin: 0 auto;
+  }
 }
 
 .ps-deal-of-day .ps-section__header {
@@ -15655,6 +15708,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
 }
 
+.wish-list {
+  max-width: 1057px;
+  width: 100%;
+}
+
 .wish-list .ps-table--shopping-cart tbody tr {
   border: 1px solid #e1e1e1;
 }
@@ -15665,6 +15723,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .wish-list .table td {
 	position: relative;
+}
+
+.wish-list .cart-page .table-responsive {
+  max-width: 1057px;
+  width: 100%;
 }
 
 .border-none:after {
@@ -16300,10 +16363,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #000;
   font-size: 14px;
   font-weight: normal;
-}
-
-.cart-page .table-responsive {
-  border-bottom: 1px solid #c4c4c4;
 }
 
 .cart-page .ps-table--shopping-cart thead tr th:first-child {
