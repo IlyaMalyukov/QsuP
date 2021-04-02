@@ -7999,7 +7999,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ps-carousel--nav .owl-dots .owl-dot.active {
-  background-color: #fcb800;
+  background-color: #f66800;
 }
 
 .ps-carousel--nav.inside .owl-nav {
@@ -8632,6 +8632,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: relative;
   overflow: hidden;
   padding: 0 20px;
+  text-align: center;
 }
 
 .ps-product .ps-product__thumbnail img {
@@ -18045,7 +18046,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     display: none;
   }
   .header--mobile .ps-search--mobile {
-    display: block;
+    display: none;
   }
 }
 
@@ -18317,17 +18318,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: block;
 }
 
-/*
+
 
 .navigation--list .navigation__item.active i {
   color: #f66800;
 }
-
-.navigation--list .navigation__item.active svg {
-  stroke: orange;
-}
-
-*/
 
 .navigation--list .navigation__item.active span {
   color: #f66800;
