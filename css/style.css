@@ -3180,7 +3180,7 @@ textarea.form-control {
 }
 
 .ps-post--detail .ps-post__tags a:hover {
-  color: #fcb800;
+  color: #f66800;
 }
 
 .ps-post--detail .ps-post__social {
@@ -3433,7 +3433,7 @@ textarea.form-control {
 }
 
 .ps-breadcrumb .breadcrumb a:hover {
-  color: #f66800;
+  color: dodgerblue;
 }
 
 .ps-breadcrumb .breadcrumb a i {
@@ -8731,11 +8731,19 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ps-product__content {
-  padding-left: 10px;
-  padding-right: 10px;
   height: 173px;
   display: flex;
   flex-direction: column;
+}
+
+.index-page .ps-product__description {
+  max-width: 170px;
+  width: 100%
+}
+
+.index-page #gridCards .ps-product__description {
+  max-width: 190px;
+  width: 100%
 }
 
 .ps-product__description {
@@ -9467,8 +9475,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   font-size: 18px;
 }
 
-.ps-product--detail .ps-product__shopping .ps-btn.ps-btn--black {
-  color: #fff;
+.ps-product--detail .ps-product__shopping .ps-btn.ps-btn--black:hover {
+  color: #fff !important;
+  background-color: #000;
+  border: none;
 }
 
 .ps-product--detail .ps-product__shopping .ps-btn--gray {
@@ -10094,11 +10104,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .ps-product--detail .ps-tab-list li a {
   position: relative;
   display: block;
-  color: #999999;
-  font-size: 20px;
+  color: #f66800;
+  font-size: 14px;
   padding: 15px 20px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .ps-product--detail .ps-tab-list li a:before {
@@ -10108,7 +10118,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #fcb800;
+  background-color: #f66800;
   transform: scale3d(0, 1, 1);
   transform-origin: 100% 50%;
   transition: transform 0.75s cubic-bezier(0.77, 0, 0.175, 1);
@@ -14803,6 +14813,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   align-items: center;
   user-select: none;
 }
+
+.custom-checkbox+label:hover {
+  cursor: pointer;
+}
+
 .custom-checkbox+label::before {
   content: '';
   display: inline-block;
@@ -14832,6 +14847,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   align-items: center;
   user-select: none;
 }
+
+.custom-radio+label:hover {
+  cursor: pointer;
+}
+
 .custom-radio+label::before {
   content: '';
   display: inline-block;
@@ -15861,6 +15881,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin-top: 10px;
 }
 
+.payment-info__btn:hover {
+  background-color: #f66800;
+}
+
 .payment-info__item {
   margin-bottom: 40px;
 }
@@ -16200,6 +16224,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin-bottom: 28px;
 }
 
+.login-page .login-form .top-btn:hover {
+  color: #000;
+} 
+
 .login-page .login-form .active {
   background-color: #ccd9dd;
 }
@@ -16239,6 +16267,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #f66800;
 }
 
+.login-page .login-form .password-action a:hover {
+  color: dodgerblue;
+}
+
 .login-page .login-form .checkbox-group .item-second {
   max-width: 517px;
   display: flex;
@@ -16250,6 +16282,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .custom-checkbox+label {
   align-items: flex-start;
   text-align: left;
+}
+
+.login-page .login-form .checkbox-group .item-second
+.custom-checkbox+label:hover {
+  cursor: pointer;
 }
 
 .login-page .login-form .checkbox-group .item-second
@@ -16322,6 +16359,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #f66800;
 }
 
+.catalog-section .col-item a:hover {
+  color: dodgerblue;
+}
+
 .contacts-page {
   text-align: center;
   padding-bottom: 40px !important;
@@ -16337,6 +16378,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .contacts-page a {
   color: #f66800;
+}
+
+.contacts-page a:hover {
+  color: dodgerblue;
 }
 
 .message-form {
@@ -16366,7 +16411,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .message-form form .col input {
   background-color: #fff;
-  color: #d1d0d1;
 }
 
 .message-form form .col textarea {
@@ -16384,6 +16428,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   font-size: 18px;
   font-weight: 900;
   border-radius: 5px;
+}
+
+.message-form .col button:hover {
+  background-color: #000;
 }
 
 @media (max-width: 530px) {
@@ -16535,7 +16583,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .cart-page .ps-product--cart
 .ps-product__content .ps-product__name a {
   font-size: 12px;
-  color: #f66800
+  color: #f66800;
+}
+
+.cart-page .ps-product--cart
+.ps-product__content .ps-product__name a:hover {
+  color: dodgerblue;
 }
 
 .cart-page .ps-product--cart
@@ -16553,10 +16606,20 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   right: -15px;
 }
 
+.cart-page .form-group--number button.up:hover,
+.cart-page .form-group--number button.down:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
 .cart-page i {
   color: #000;
   font-size: 20px;
   margin-right: 10px;
+}
+
+.cart-page i:hover {
+  cursor: pointer;
 }
 
 .cart-page__total {
@@ -16653,10 +16716,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin-top: 55px;
 }
 
-.account-page form .col {
-  padding: 0;
-}
-
 .account-page form input {
   margin-top: 20px;
   max-width: 418px;
@@ -16665,6 +16724,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .account-page form .col {
   max-width: 418px;
+  width: 100%;
 }
 
 .account-page form .double-row {
@@ -16690,6 +16750,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     flex-direction: column;
     margin: 0 auto;
   }
+
+  .account-page form .double-row .col {
+    padding-left: 0;
+  }
 }
 
 .account-page .ps-btn{
@@ -16706,6 +16770,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .account-page .account-page__btn-container {
   justify-content: center;
+}
+
+@media  (max-width: 991px) {
+  .account-page .account-page__btn-container {
+    justify-content: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .search-page .ps-section__header-gray {
@@ -16978,6 +17050,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   line-height: 21px;
 }
 
+.error-page__container :hover {
+  color: #000;
+}
+
 @media (max-width: 991px) {
   .error-page__container h3 {
     font-size: 26px;
@@ -17020,6 +17096,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .catalog-subsection .ps-product__description {
   margin-bottom: 0;
+  max-width: 130px;
 }
 
 .repair-page .table-responsive--mobile
@@ -17080,8 +17157,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ps-section__desc-contacts--item :first-child a {
-  color: dodgerblue;
+  color: #f66800;
   border-bottom: none;
+}
+
+.ps-section__desc-contacts--item :first-child a:hover {
+  color: dodgerblue;
 }
 
 .ps-page--product-box {
@@ -18181,6 +18262,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
   border-bottom: none;
 }
@@ -18534,7 +18616,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: block;
 }
 
-
+.navigation--list .navigation__item:hover i {
+  color: #f66800;
+}
 
 .navigation--list .navigation__item.active i {
   color: #f66800;
