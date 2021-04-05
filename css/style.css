@@ -801,6 +801,11 @@ hr {
   overflow: visible;
 }
 
+select,
+button {
+  cursor: pointer;
+}
+
 button,
 input,
 select,
@@ -3384,9 +3389,21 @@ textarea.form-control {
 .ps-breadcrumb .breadcrumb {
   display: inline-block;
   margin: 0;
-  margin-left: 6%;
+  margin-left: 87px;
   padding: 0;
   background-color: transparent;
+}
+
+@media (max-width: 1199px) {
+  .ps-breadcrumb .breadcrumb {
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 479px) {
+  .ps-breadcrumb .breadcrumb {
+    margin-left: 20px;
+  }
 }
 
 .ps-breadcrumb .breadcrumb li {
@@ -3635,6 +3652,11 @@ textarea.form-control {
   max-height: 145px;
 }
 
+.ps-block--category-2 .ps-block__thumbnail img {
+  max-width: 145px;
+  max-height: 145px;
+}
+
 .ps-block--category-2 .ps-block__content {
   padding: 18px 10px 15px;
 }
@@ -3648,6 +3670,12 @@ textarea.form-control {
   line-height: 16,8px;
   position: relative;
 }
+
+.ps-block--category-2 .ps-block__content ul li a:hover {
+  color: #f66800;
+}
+
+/*
 
 .ps-block--category-2 .ps-block__content ul li a:before {
   content: '';
@@ -3666,6 +3694,8 @@ textarea.form-control {
   transform: scale3d(1, 1, 1);
   transform-origin: 0 50%;
 }
+
+*/
 
 .ps-block--category-2.ps-block--category-auto-part h4 {
   font-weight: 600;
@@ -3697,6 +3727,11 @@ textarea.form-control {
     max-width: 70px;
     max-height: 50px;
     padding-top: 20px;
+  }
+
+  .ps-block--category-2 .ps-block__thumbnail img {
+    max-width: 70px;
+    max-height: 50px;
   }
 }
 
@@ -3730,7 +3765,8 @@ textarea.form-control {
 }
 
 .ps-block--user-header .ps-block__right a:hover {
-  color: #ffffff;
+  color: #f66800;
+  cursor: pointer;
 }
 
 .ps-block--site-features {
@@ -3744,7 +3780,7 @@ textarea.form-control {
 
 .ps-block--site-features .ps-block__left i {
   font-size: 40px;
-  color: #fcb800;
+  color: #f66800;
 }
 
 .ps-block--site-features .ps-block__right {
@@ -4067,7 +4103,7 @@ textarea.form-control {
   top: 0;
   right: 0;
   font-size: 40px;
-  color: #fcb800;
+  color: #f66800;
 }
 
 .ps-block--testimonial .ps-block__content h4 {
@@ -4101,7 +4137,7 @@ textarea.form-control {
 
 .ps-block--deal-hot {
   padding: 13px 30px 30px;
-  border: 2px solid #fcb800;
+  border: 2px solid #f66800;
 }
 
 .ps-block--deal-hot .ps-block__header {
@@ -4836,9 +4872,26 @@ textarea.form-control {
   margin-right: 82px;
 }
 
+
 .ps-section__header-buttons button {
   border: none;
   background-color: #f5f5f5;
+}
+
+#cardToggle svg {
+  stroke: #1c1c1c;
+}
+
+#cardToggle:hover svg {
+  stroke: #f66800;
+}
+
+#listToggle svg {
+  fill: #1c1c1c;
+}
+
+#listToggle:hover svg {
+  fill: #f66800;
 }
 
 .ps-block--container-hightlight .ps-section__header h3 {
@@ -8610,6 +8663,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .ps-product .ps-product__title:hover {
   color: #f66800;
+  cursor: pointer;
 }
 
 .ps-product .ps-product__progress-bar {
@@ -8648,6 +8702,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin: 0 auto;
 }
 
+.ps-product .ps-product__thumbnail a:hover {
+  cursor: pointer;
+}
+
 .ps-product .ps-product__thumbnail .ps-product__actions {
   position: absolute;
   bottom: 0;
@@ -8658,6 +8716,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .ps-product .ps-product__star {
   display: flex;
   justify-content: flex-end;
+}
+
+.ps-product .ps-product__star:hover {
+  cursor: pointer;
+}
+
+.ps-product .ps-product__star svg {
+  stroke: #A2999E;
+}
+
+.ps-product .ps-product__star svg:hover {
+  stroke: orangered;
 }
 
 .ps-product__content {
@@ -8682,6 +8752,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+}
+
+.ps-product__description button:hover {
+  background-color: #f66800;
+}
+
+.ps-product__description button:hover svg {
+  stroke: #fff;
+}
+
+.ps-product__description button svg {
+  stroke: #1a1a1a;
 }
 
 .ps-product .ps-product__content > p {
@@ -11653,6 +11735,19 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   width: 50px;
   height: 50px;
   margin-right: 25px;
+}
+
+.ps-table--shopping-cart tbody tr td button:hover {
+  background-color: #f66800;
+}
+
+.ps-table--shopping-cart tbody tr td button:hover svg {
+  stroke: #fff;
+}
+
+
+.ps-table--shopping-cart tbody tr td button svg {
+  stroke: #1a1a1a;
 }
 
 .ps-table--shopping-cart tbody tr td:last-child a {
@@ -17188,6 +17283,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .mega-menu .mega-menu__list a:hover {
   background-color: #ccd9dd;
+  cursor: pointer;
 }
 
 .mega-menu .mega-menu__list li a.has-badge {
@@ -17224,17 +17320,21 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   padding-left: 5px;
   padding-right: 10px;
   margin-left: 9px;
-  margin-top: -47px;
+  margin-top: -48px;
   background-color: #e1e1e1;
 }
 
 .dropright .dropdown-menu li {
   width: 342px;
-  height: 37px;
-  margin: 10px;
+  min-height: 37px;
+  margin: 6px;
   padding-top: 10px;
   padding-right: 10px;
+}
+
+.dropright .dropdown-menu li:hover {
   background-color: #ccd9dd;
+  cursor: pointer;
 }
 
 .dropright .dropdown-menu li a {
@@ -17443,7 +17543,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   padding: 0 12px;
   transition: all .4s ease;
   width: 347px;
-  height: 37px;
+  min-height: 37px;
   margin: 12px;
 }
 
@@ -17484,6 +17584,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .menu--dropdown > li:hover {
   background-color: #ccd9dd;
+  cursor: pointer;
 }
 
 .menu--dropdown > li:hover.has-mega-menu .mega-menu {
@@ -17670,6 +17771,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   line-height: 42px;
 }
 
+.header .header__extra > i:hover {
+  color: #f66800;
+}
+
+.header .header__extra > svg:hover {
+  stroke: #f66800;
+}
+
+.header .header__extra svg {
+  stroke: white;
+}
+
 .header .header__extra span {
   position: absolute;
   bottom: 0;
@@ -17691,10 +17804,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   font-style: normal;
   line-height: 1em;
   font-weight: 500;
-}
-
-.header .header__extra:hover i {
-  color: #ffffff;
 }
 
 .header .header__actions {
@@ -17831,7 +17940,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .header--standard .header__top-links .ps-block--user-header .ps-block__right a:hover {
-  color: #fcb800;
+  color: #f66800;
+  cursor: pointer;
 }
 
 .header--standard .header__top {

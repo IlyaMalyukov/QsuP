@@ -7,7 +7,8 @@
 }
 
 .header--market-place-2 .menu > li > a:hover {
-  color: #ffffff;
+  color: #f66800;
+  cursor: pointer;
 }
 
 .header--market-place-2 .navigation {
@@ -30,11 +31,11 @@
 }
 
 .header--market-place-2 .header__extra:hover > i {
-  color: #fcb800;
+  color: #f66800;
 }
 
 .header--market-place-2 .header__extra:hover span {
-  color: #fcb800;
+  color: #f66800;
 }
 
 .header--market-place-2 .header__content {
