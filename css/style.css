@@ -1031,6 +1031,10 @@ figure {
   color: #c4c4c4;
 }
 
+.icon-cross:hover{
+  cursor: pointer;
+}
+
 .ps-document ul,
 .ps-document ol {
   margin-bottom: 10px;
@@ -11729,6 +11733,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   text-align: right;
 }
 
+.ps-table--shopping-cart tbody tr td:last-child:hover {
+  cursor: pointer;
+}
+
 #listCards .ps-table--shopping-cart tbody tr td button {
   margin-left: -70px;
 }
@@ -13311,6 +13319,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin: 0 auto;
 }
 
+.service-page .ps-product-service:hover {
+  border-color: #f66800;
+}
+
 @media (max-width: 1300px) {
   .service-page .ps-product-service {
     max-width: 231px;
@@ -13352,6 +13364,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .service-page .ps-product-service a {
   color: #000;
   margin: 10px 0 10px 0;
+}
+
+.service-page .ps-product-service a:hover {
+  color: #f66800;
 }
 
 .service-page .ps-product__thumbnail {
@@ -17157,12 +17173,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .ps-section__desc-contacts--item :first-child a {
-  color: #f66800;
+  color: #f66800 !important;
   border-bottom: none;
 }
 
 .ps-section__desc-contacts--item :first-child a:hover {
-  color: dodgerblue;
+  color: dodgerblue !important;
 }
 
 .ps-page--product-box {
