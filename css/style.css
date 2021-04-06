@@ -3398,6 +3398,12 @@ textarea.form-control {
   background-color: transparent;
 }
 
+@media (min-width: 1920px) {
+  .ps-breadcrumb .breadcrumb {
+    margin-left: 365px;
+  }
+}
+
 @media (max-width: 1199px) {
   .ps-breadcrumb .breadcrumb {
     margin-left: 32px;
