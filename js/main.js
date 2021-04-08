@@ -251,6 +251,8 @@
                         ? el.data('owl-nav-right')
                         : "<i class='icon-chevron-right'></i>",
                     duration = el.data('owl-duration'),
+                    datatouchDrag = 
+                        el.data('owl-touchdrag') == 'off' ? false : true,
                     datamouseDrag =
                         el.data('owl-mousedrag') == 'on' ? true : false;
                 if (
@@ -267,7 +269,7 @@
                         loop: dataLoop,
                         nav: dataNav,
                         mouseDrag: datamouseDrag,
-                        touchDrag: true,
+                        touchDrag: datatouchDrag,
                         autoplaySpeed: duration,
                         navSpeed: duration,
                         dotsSpeed: duration,
