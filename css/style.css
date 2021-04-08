@@ -17491,9 +17491,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .dropright .dropdown-menu {
   width: 370px;
   font-size: 14px;
-  padding: 43px 10px 10px 10px;
+  padding: 8px 8px 8px 8px;
   margin-left: 9px;
-  margin-top: -49px;
+  margin-top: -13px;
   background-color: #e1e1e1;
 }
 
@@ -17685,7 +17685,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .menu--product-categories .menu__content {
   position: absolute;
   top: 100%;
-  left: -500px;
   z-index: 100;
   z-index: 1000;
   min-width: 100%;
@@ -17700,7 +17699,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   background-color: #fff;
   border: 1px solid #d3d3d3;
   width: 370px;
-  padding-top: 35px;
 }
 
 .menu--product-categories .menu--dropdown > .has-mega-menu {
@@ -17767,8 +17765,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   visibility: visible;
   opacity: 1;
   margin-left: 9px;
-  margin-top: -48px;
-  padding-top: 40px;
+  margin-top: -13px;
   background-color: #f4f4f4;
 }
 
