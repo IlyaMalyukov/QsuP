@@ -11569,6 +11569,84 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
 }
 
+.table-responsive--mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .table-responsive {
+    display: none;
+  }
+
+  .table-responsive--mobile {
+    display: block;
+  }
+}
+
+.table-responsive--mobile .ps-product--cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.table-responsive--mobile .ps-product--cart
+.ps-product__thumbnail {
+  margin-right: 0 auto;
+}
+
+.table-responsive--mobile .ps-product--cart
+.ps-product__content {
+  padding-left: 0;
+}
+
+.table-responsive--mobile
+.ps-table--shopping-cart tbody tr {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.table-responsive--mobile
+.ps-table--shopping-cart tbody tr td {
+  border: none;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.table-responsive--mobile
+.ps-table--shopping-cart tbody tr td a {
+  font-size: 12px;
+}
+
+.table-responsive--mobile
+.ps-table--shopping-cart tbody tr td button {
+  margin-right: 10px;
+}
+
+.table-responsive--mobile
+.ps-table--shopping-cart tbody tr td .custom-made {
+  margin-right: 10px;
+}
+
+.table-responsive--mobile
+.ps-table--shopping-cart tbody tr .ps-product--cart {
+  margin-left: 5px;
+}
+
+.table-responsive--mobile
+.ps-table--shopping-cart tbody tr td:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.table--mobile-price {
+  margin-top: 5px;
+}
+
+.table-responsive--mobile .range-quantity {
+  font-size: 10px !important;
+}
+
 .ps-table thead > tr > th {
   font-family: "Work Sans", sans-serif;
   font-size: 18px;
