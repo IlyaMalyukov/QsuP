@@ -4930,6 +4930,14 @@ textarea.form-control {
   line-height: 30px;
 }
 
+select {
+  padding-left: 5px;
+  appearance: none;
+  background: url(/img_qsup/down-chevron.png) no-repeat right;
+  background-size: 10px;
+  background-position-x: calc(100% - 10px);
+}
+
 @media (max-width: 767px) {
   .ps-block--container-hightlight .ps-section__header h3 {
     font-size: 16px;
@@ -4942,6 +4950,7 @@ textarea.form-control {
   .ps-section__header-gray select {
     max-width: 100px;
     padding: 2px;
+    padding-left: 5px;
     margin-bottom: 10px;
     margin-right: 0 !important;
   }
@@ -9174,6 +9183,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #f66800;
   font-size: 16px;
   text-align: left;
+  float: left;
   margin-right: 20px;
 }
 
