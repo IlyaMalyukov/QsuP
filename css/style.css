@@ -5135,7 +5135,7 @@ select {
 }
 
 .ps-block--menu-categories .ps-list--menu-cateogories .sub-menu > li > a:hover {
-  background-color: #fcb800;
+  background-color: #f66800;
 }
 
 @media (max-width: 1199px) {
@@ -7116,7 +7116,6 @@ select {
 }
 
 .ps-panel--sidebar .ps-panel__content {
-  padding-top: 10px;
   padding-bottom: 70px;
 }
 
@@ -17538,7 +17537,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .sub-toggle {
   position: relative;
   display: inline-block;
-  width: 36px;
+  width: 100%;
   height: 36px;
   cursor: pointer;
   transform-style: preserve-3d;
@@ -17549,7 +17548,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   content: '';
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 90%;
   width: 12px;
   height: 1px;
   background-color: #000;
@@ -17609,7 +17608,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .sub-menu > li > a:hover {
-  color: #fcb800;
+  color: #f66800;
 }
 
 .sub-menu > li:last-child {
@@ -17723,8 +17722,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   width: 370px;
   font-size: 14px;
   padding: 8px 8px 8px 8px;
-  margin-left: 9px;
-  margin-top: -13px;
+  margin-left: 10px;
+  margin-top: -14px;
   background-color: #e1e1e1;
 }
 
@@ -18076,10 +18075,15 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   position: absolute;
   top: 5px;
   right: 0;
-  width: 40px;
+  max-width: 400px;
+  width: 100%;
   height: 40px;
   z-index: 20;
   display: inline-block;
+}
+
+.menu--mobile > li.menu-item-has-children .sub-toggle span {
+  float: right;
 }
 
 .menu--mobile .mega-menu {
