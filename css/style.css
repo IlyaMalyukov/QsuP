@@ -9174,13 +9174,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #f66800;
   font-size: 16px;
   text-align: left;
+  margin-right: 20px;
 }
 
 @media (max-width: 768px) {
   #listCards .custom-made {
     white-space: nowrap;
     font-size: 13px;
-    margin-right: 0;
+    margin-right: 10px;
   }
 }
 
@@ -11665,6 +11666,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin-top: 5px;
 }
 
+.table--mobile-price b {
+  color: #000;
+}
+
 .table-responsive--mobile .range-quantity {
   font-size: 10px !important;
   white-space: nowrap;
@@ -11695,9 +11700,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     flex-flow: column nowrap;
     align-items: flex-end;
     margin-left: 30px;
-  }
-  .ps-table--responsive .ps-product--cart .ps-product__thumbnail {
-    display: none;
   }
   .ps-table--responsive .ps-product--cart .ps-product__content {
     padding-left: 0;
@@ -16046,6 +16048,43 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   width: 100%;
 }
 
+.wish-list .table-responsive--mobile 
+.ps-product__thumbnail  {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.wish-list .table-responsive--mobile 
+.ps-product__outer-btn {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+.wish-list .table-responsive--mobile 
+.ps-table--shopping-cart tbody tr td button {
+  margin-right: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.wish-list .table-responsive--mobile 
+.range-quantity {
+  font-size: 8px !important;
+}
+
+@media(max-width: 780px) {
+  .wish-list .table-responsive--mobile tbody {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+}
+
+.border-none {
+  max-width: 30px;
+}
+
 .border-none:after {
 	content: '';
 	position: absolute;
@@ -16062,10 +16101,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     content: '';
     position: absolute;
     top: -2px;
-    right: -2px; 
-    bottom: -2px;    
+    right: -3px; 
+    bottom: -7px;    
     left: 0;
-    border: none;
+    border: 4px solid white;
+    border-left: 1px solid #e1e0e1;
   }
 }
 
